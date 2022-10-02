@@ -1,14 +1,14 @@
 import React from 'react'
 
-export default function Reset({reset, setReset, winner}) {
+export default function Reset({winner, setBoard}) {
 
   const handleClick = () => {
-    setReset(!reset)
+    setBoard(Array(9).fill(null))
   }
 
   return (
     <div>
-      <p>{winner} is the winner!</p>
+      <p>Winner is {winner}</p>
       <button onClick={handleClick}>Reset</button>
     </div>
   )

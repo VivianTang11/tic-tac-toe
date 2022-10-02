@@ -17,3 +17,10 @@ export function calculateWinner(squares) {
 	}
 	return null;
 }
+
+const squares = [
+	null,null,null,
+	'x','x','o',
+	null,null,null
+];
+console.log(calculateWinner(squares))
