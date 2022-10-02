@@ -3,12 +3,14 @@ import './App.css';
 import Board from './components/Board/Board';
 import Reset from './components/Reset/Reset';
 
-function App() {
+
+
+
+export default function App() {
 
   const [reset, setReset] = useState(false)
   const [winner, setWinner] = useState('Player 1')
   const [turn, setTurn] = useState('X')
-
 
   return (
     <div>
@@ -25,4 +27,3 @@ function App() {
   );
 }
 
-export default App;
