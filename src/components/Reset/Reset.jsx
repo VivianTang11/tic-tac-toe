@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import styles from './Reset.module.css'
 
 export default function Reset({winner, setBoard}) {
 
@@ -8,8 +9,7 @@ export default function Reset({winner, setBoard}) {
 
   return (
     <div>
-      <p>Winner is {winner}</p>
-      <button onClick={handleClick}>Reset</button>
+      <button className={styles.resetBtn} onClick={handleClick}>Reset</button>
     </div>
   )
 }

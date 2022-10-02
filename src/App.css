@@ -1,3 +1,36 @@
-body{
-  color: black
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+h1{
+  color: black;
+  margin: 2rem 0;
+}
+p{
+  margin: 2rem 0;
+
+}
+
+main{
+  text-align: center;
+  margin: 2rem 0;
+}
+footer{
+  position: fixed;
+  bottom:2rem;
 }

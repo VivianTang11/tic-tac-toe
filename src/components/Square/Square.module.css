@@ -1,0 +1,26 @@
+.squareBtn{
+  background: rgba(255, 255, 255, 0.34);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.2px);
+  -webkit-backdrop-filter: blur(3.2px);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.squareBtn:focus{
+  animation: test 1.5s forwards ;
+}
+.squareBtn:hover{
+  opacity: 0.5;
+}
+
+@keyframes test{
+  from {
+    opacity: 0.5;
+  };
+  to {
+    opacity: 0;
+  };
+}

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Board from '../Board/Board';
 import Reset from '../Reset/Reset';
 import { calculateWinner } from '../../helper';
+import styles from './Game.module.css'
 
 
 export default function Game() {
@@ -21,9 +22,10 @@ export default function Game() {
 
 
   return (
-    <div>
+    <div className={styles.game}>
+      <p>{winner ? `The winner is ${winner}!`: `Player: ${nextPlayer ? 'X' : 'O'}`}</p>
       <Board squares={board} onClick={handleClick}/>
-      <p>{winner ? <Reset winner={winner} setBoard={setBoard}/> : `Turn:${nextPlayer ? 'X' : 'O'}`}</p>
+      <p>{winner ? <Reset winner={winner} setBoard={setBoard}/> : ``}</p>
     </div>
   )
 }

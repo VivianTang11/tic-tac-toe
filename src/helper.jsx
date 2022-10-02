@@ -23,4 +23,3 @@ const squares = [
 	'x','x','o',
 	null,null,null
 ];
-console.log(calculateWinner(squares))

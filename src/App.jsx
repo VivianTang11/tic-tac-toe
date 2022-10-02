@@ -1,23 +1,20 @@
-import { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Game from './components/Game/Game';
-import Reset from './components/Reset/Reset';
-
-
 
 
 export default function App() {
 
   return (
-    <div>
+    <div className='app'>
       <header>
-        Tick-Tac-Toe Game
+        <h1>Tick-Tac-Toe Game</h1>
       </header>
       <main>
         <Game/>          
       </main>
       <footer>
-        coded by Vivian
+        coded by <a href="https://github.com/VivianTang11">Vivian Tang</a>
       </footer>
     </div>
   );
