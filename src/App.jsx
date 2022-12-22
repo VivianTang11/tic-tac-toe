@@ -14,7 +14,7 @@ export default function App() {
         <Game/>          
       </main>
       <footer>
-        coded by <a href="https://github.com/VivianTang11">Vivian Tang</a>
+        coded by <a href="https://github.com/viviantang92">Vivian Tang</a>
       </footer>
     </div>
   );
